@@ -1,6 +1,20 @@
 import styled from "styled-components";
 
-export const Main = styled.main`
+type BgColors = "white" | "gray";
+
+type ColorProps = { bgColor?: BgColors };
+
+export const FullWidthSection = styled.section<ColorProps>`
+  width: 100%;
+  background-color: ${(props) => props.bgColor ?? "white"};
+`;
+
+export const SectionContainer = styled.div`
   width: 80vw;
-  max-width: 1920px;
+  margin-inline: auto;
+`;
+
+export const Main = styled.main`
+  margin-inline: auto;
+  padding: var(--padding-section);
 `;
