@@ -6,7 +6,8 @@ type ColorProps = { bgColor?: BgColors };
 
 export const FullWidthSection = styled.section<ColorProps>`
   width: 100%;
-  background-color: ${(props) => props.bgColor ?? "white"};
+  background-color: ${(props) =>
+    props.bgColor == "gray" ? "var(--clr-gray-200)" : "white"};
 `;
 
 export const SectionContainer = styled.div`
