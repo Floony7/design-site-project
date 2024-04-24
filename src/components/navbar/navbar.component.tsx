@@ -1,10 +1,14 @@
-import { FullWidthSection, SectionContainer } from "../../styles/page-layout";
-// import { Header } from "../header/header.component";
+import { navLinks } from "../../data/mock";
+import { NavStyles } from "./navbar.styles";
 
-export const Hero = () => {
+export const Navbar = () => {
   return (
-    <FullWidthSection>
-      <SectionContainer></SectionContainer>
-    </FullWidthSection>
+    <NavStyles>
+      <ul>
+        {navLinks.map((link) => (
+          <li key={link.name}>{link.name}</li>
+        ))}
+      </ul>
+    </NavStyles>
   );
 };

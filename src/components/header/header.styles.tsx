@@ -1,9 +1,21 @@
 import styled from "styled-components";
 
+export const HeaderContainer = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+`;
+
 export const HeaderStyles = styled.header`
-  margin-inline: auto;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 80vw;
   display: flex;
   justify-content: space-between;
-  background-color: var(--clr-magenta-100);
   padding: var(--padding);
+
+  img {
+    max-height: 60px;
+  }
 `;

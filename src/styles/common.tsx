@@ -6,9 +6,13 @@ import styled from "styled-components";
 // `;
 export const SectionHeader = styled.h3`
   font-family: Raleway, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 3rem;
+  font-size: 2rem;
   color: black;
   line-height: 1;
+
+  @media only screen and (max-width: var(--width-lg)) {
+    font-size: 3rem;
+  }
 
   .gray {
     color: var(--clr-slate-700);

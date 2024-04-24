@@ -20,6 +20,7 @@ html {
     --padding-section: 3rem;
     --padding: 1rem;
     --margin: 1rem;
+    --width-lg: 960px;
 
     // Base styles
     font-family: "Open Sans", system-ui, Avenir, Helvetica, Arial, sans-serif;

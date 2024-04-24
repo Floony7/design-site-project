@@ -1,7 +1,6 @@
 import { CtaLink, Lead, SectionHeader } from "../../styles/common";
 import { FullWidthSection, SectionContainer } from "../../styles/page-layout";
 import spaniel from "../../assets/images/spaniel_gradient.png";
-// import { Header } from "../header/header.component";
 import { HeroContainer } from "./hero.styles";
 
 export const Hero = () => {
@@ -9,7 +8,6 @@ export const Hero = () => {
     <FullWidthSection>
       <SectionContainer>
         <div>
-          {/* <Header /> */}
           <HeroContainer>
             <div className="hero__section hero__section-left">
               <article className="hero__section-content">

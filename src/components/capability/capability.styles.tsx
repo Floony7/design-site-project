@@ -22,8 +22,7 @@ export const CapabilityGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 60%;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin: 3rem 0 3rem 3rem;
 
   .capability__section-grid--list:not(:first-child) {
     margin-top: 1rem;
