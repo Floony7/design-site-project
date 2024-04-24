@@ -11,7 +11,7 @@ export const FullWidthSection = styled.section<ColorProps>`
 `;
 
 export const SectionContainer = styled.div`
-  width: 80vw;
+  width: 70vw;
   margin-inline: auto;
 `;
 

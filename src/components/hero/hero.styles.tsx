@@ -12,7 +12,6 @@ export const HeroContainer = styled.section`
   .hero__section-left {
     background: inherit;
     display: flex;
-    justify-content: center;
     align-items: center;
     height: 100%;
   }
@@ -24,7 +23,7 @@ export const HeroContainer = styled.section`
   }
 
   .hero__section-content {
-    width: 50%;
+    width: 70%;
     /* display: flex;
     flex-direction: column; */
   }

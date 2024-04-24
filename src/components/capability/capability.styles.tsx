@@ -10,12 +10,11 @@ export const CapabilityStyles = styled.div`
   .capability__section-left {
     background: inherit;
     display: flex;
-    justify-content: center;
     height: 100%;
   }
 
   .capability__section-content {
-    width: 50%;
+    width: 65%;
   }
 `;
 
