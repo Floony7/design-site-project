@@ -10,4 +10,4 @@ export const capabilityArray: Capability[] = [
     {area: "development", skill: "Mobile Apps"},
     {area: "marketing", skill: "Digital"},
     {area: "marketing", skill: "Market Research"},
-]
+];

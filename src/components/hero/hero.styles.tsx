@@ -34,9 +34,4 @@ export const HeroContainer = styled.section`
     text-transform: uppercase;
     font-size: 1.5rem;
   }
-
-  .lead {
-    margin-bottom: 2rem;
-    color: var(--clr-slate-700);
-  }
 `;

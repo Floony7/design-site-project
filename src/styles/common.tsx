@@ -17,7 +17,7 @@ export const SectionHeader = styled.h3`
 
 export const CtaLink = styled.a`
   text-decoration: underline;
-  padding: 5px 5px 5px 0;
+  padding: 5px 5px 5px 2px;
   text-decoration-thickness: 3px;
   text-underline-offset: 4px;
   text-decoration-color: var(--clr-magenta-200);
@@ -31,4 +31,9 @@ export const CtaLink = styled.a`
     text-decoration-color: transparent;
     box-shadow: inset 200px 0 0 0 var(--clr-magenta-200);
   }
+`;
+
+export const Lead = styled.p`
+  margin-bottom: 2.5rem;
+  color: var(--clr-slate-700);
 `;

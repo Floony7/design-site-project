@@ -1,5 +1,5 @@
 import { capabilityArray } from "../../data/mock";
-import { CtaLink, SectionHeader } from "../../styles/common";
+import { CtaLink, Lead, SectionHeader } from "../../styles/common";
 import { FullWidthSection, SectionContainer } from "../../styles/page-layout";
 import { CapabilityGrid, CapabilityStyles } from "./capability.styles";
 
@@ -14,14 +14,14 @@ export const Capabilty = () => {
                 What are <br />
                 <span className="gray">we capable of</span>
               </SectionHeader>
-              <p className="lead">
+              <Lead>
                 By focusing on design as an enabler and putting a huge emphasis
                 on our clients as co-producers, we create innovative,
                 sustainable marketing that enhances brand experience and user
                 engagement.
-              </p>
+              </Lead>
               <p>
-                <CtaLink href="#">Let's talk</CtaLink>
+                <CtaLink href="#">Our process</CtaLink>
               </p>
             </article>
           </div>

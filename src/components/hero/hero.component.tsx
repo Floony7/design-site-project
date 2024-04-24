@@ -1,4 +1,4 @@
-import { CtaLink, SectionHeader } from "../../styles/common";
+import { CtaLink, Lead, SectionHeader } from "../../styles/common";
 import { FullWidthSection, SectionContainer } from "../../styles/page-layout";
 import spaniel from "../../assets/images/spaniel_gradient.png";
 // import { Header } from "../header/header.component";
@@ -20,11 +20,11 @@ export const Hero = () => {
                   We unleash <br />
                   <span className="gray">business potential</span>
                 </SectionHeader>
-                <p className="lead">
+                <Lead>
                   We create brand experiences which are memorable and distinct.
                   Our experienced team create and develop brands with
                   personality and resonance.
-                </p>
+                </Lead>
                 <p>
                   <CtaLink href="#">Let's talk</CtaLink>
                 </p>

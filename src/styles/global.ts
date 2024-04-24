@@ -3,8 +3,8 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalStyles = createGlobalStyle`
 html {
     // Color variables
-    --clr-magenta-100: #C34465;
-    --clr-magenta-200: #C0345E;
+    --clr-magenta-100: rgb(195, 68, 101); // #C34465
+    --clr-magenta-200: rgb(192, 52, 94); // #C0345E
     --clr-gray-100: rgb(237, 239, 241);
     --clr-gray-200: rgb(237, 239, 241); // #EDEFF1
     --clr-gray-300: rgba(25, 41, 58, 0.1);
