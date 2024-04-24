@@ -11,21 +11,24 @@ export const SectionHeader = styled.h3`
   line-height: 1;
 
   .gray {
-    color: var(--clr-gray-700);
+    color: var(--clr-slate-700);
   }
 `;
 
 export const CtaLink = styled.a`
   text-decoration: underline;
+  padding: 5px 5px 5px 0;
   text-decoration-thickness: 3px;
   text-underline-offset: 4px;
   text-decoration-color: var(--clr-magenta-200);
+  box-shadow: inset 0 0 0 0 var(--clr-magenta-200);
   color: var(--clr-gray-700);
   font-weight: 700;
   transition: all 0.3s ease-in-out;
 
   &:hover {
-    color: var(--clr-magenta-200);
-    text-decoration-color: hotpink;
+    color: white;
+    text-decoration-color: transparent;
+    box-shadow: inset 200px 0 0 0 var(--clr-magenta-200);
   }
 `;

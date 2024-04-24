@@ -18,10 +18,9 @@ export const HeroContainer = styled.section`
   }
 
   .hero__section-right {
-    /* background: url();
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover; */
+    img {
+      height: 100%;
+    }
   }
 
   .hero__section-content {
@@ -34,5 +33,10 @@ export const HeroContainer = styled.section`
     color: var(--clr-magenta-200);
     text-transform: uppercase;
     font-size: 1.5rem;
+  }
+
+  .lead {
+    margin-bottom: 2rem;
+    color: var(--clr-slate-700);
   }
 `;

@@ -20,7 +20,7 @@ export const Hero = () => {
                   We unleash <br />
                   <span className="gray">business potential</span>
                 </SectionHeader>
-                <p>
+                <p className="lead">
                   We create brand experiences which are memorable and distinct.
                   Our experienced team create and develop brands with
                   personality and resonance.
