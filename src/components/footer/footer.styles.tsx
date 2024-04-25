@@ -53,4 +53,8 @@ export const FooterLinks = styled.section`
       color: var(--clr-magenta-200);
     }
   }
+
+  h4 {
+    margin-bottom: 0;
+  }
 `;

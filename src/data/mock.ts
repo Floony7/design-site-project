@@ -14,6 +14,8 @@ export const capabilityArray: Capability[] = [
     {area: "marketing", skill: "Market Research"},
 ];
 
+export const services = [... new Set(capabilityArray.map(c => c.area))];
+
 export type NavLink = {
 name: string;
 url: string;

@@ -5,7 +5,7 @@ export const TestimonialCard = ({
   testimonial,
 }: {
   testimonial: Testimonial;
-}) => {
+} & React.HTMLAttributes<HTMLElement>) => {
   const { name, comment, imgUrl, company } = testimonial;
 
   return (

@@ -15,7 +15,7 @@ html {
     --clr-slate-600: rgb(52, 70, 87); // #344657
     --clr-slate-700: rgb(80, 100, 115); // #506473
     --clr-slate-900: rgb(17, 45, 64); // #112D40
-
+  
     // Layout variables
     --page-width: 80vw;
     --padding-section: 3rem;

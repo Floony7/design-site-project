@@ -16,7 +16,6 @@ export const CardContainer = styled.article`
   border-radius: 0.5rem;
   max-width: 350px;
   padding: 1rem;
-  /* margin: 0 10px; */
   color: black;
   background-color: var(--clr-gray-500);
 

@@ -1,6 +1,7 @@
-import { CtaLink, Lead, SectionHeader } from "../../styles/common";
-import { navLinks } from "../../data/mock";
+import { CtaLink, SectionHeader } from "../../styles/common";
+import { navLinks, services } from "../../data/mock";
 import { FooterContainer, FooterLinks, FooterSection } from "./footer.styles";
+import { capitalise } from "../../utils/functions";
 
 export const Footer = () => {
   return (
@@ -29,9 +30,25 @@ export const Footer = () => {
             </div>
             <div>
               <h4 className="capitalised__header">Services</h4>
+              <ul>
+                {services.map((service) => (
+                  <li key={service}>
+                    <a href="#">{capitalise(service)}</a>
+                  </li>
+                ))}
+              </ul>
             </div>
             <div>
               <h4 className="capitalised__header">Questions?</h4>
+              <div>
+                <h4>Call Us</h4>
+                <span>0121 345 678</span>
+              </div>
+
+              <div>
+                <h4>Email Us</h4>
+                <span>info@digitalspaniel.co.uk</span>
+              </div>
             </div>
           </FooterLinks>
         </div>

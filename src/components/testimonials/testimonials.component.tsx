@@ -6,6 +6,7 @@ import { FullWidthSection, SectionContainer } from "../../styles/page-layout";
 import { CarouselContainer } from "./testimonials.styles";
 import { TestimonialCard } from "./testimonial-card.component";
 import { SectionHeader } from "../../styles/common";
+import { useState } from "react";
 
 export interface Testimonial {
   id: number;
@@ -31,6 +32,8 @@ export const Testimonials = () => {
     queryFn: fetchTestimonials,
   });
   //   console.log("Result", data);
+  // Use currentSlide to determine which card is active
+  const [currentSlide, setCurrentSlide] = useState(0);
 
   const settings = {
     dots: true,
@@ -57,6 +60,7 @@ export const Testimonials = () => {
     ],
   };
 
+  console.log("CURRENT", currentSlide);
   return (
     <FullWidthSection bgColor="white">
       <SectionContainer>
@@ -67,7 +71,12 @@ export const Testimonials = () => {
         <CarouselContainer>
           {isError ? "Could not fetch testimonials" : null}
           <div className="slider-container">
-            <Slider {...settings}>
+            <Slider
+              {...settings}
+              beforeChange={(currentSlide: number, nextSlide: number) =>
+                setCurrentSlide(nextSlide)
+              }
+            >
               {data?.testimonials.map((testimonial) => (
                 <TestimonialCard
                   key={testimonial.id}
