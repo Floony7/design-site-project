@@ -63,9 +63,12 @@ export const FooterLinks = styled.section`
 export const Colophon = styled.section`
   display: flex;
   justify-content: space-between;
+  color: var(--clr-slate-700);
+  font-size: 0.8rem;
 
   .colophon__social-links {
     display: flex;
+    flex-wrap: wrap;
     width: 30%;
   }
 `;

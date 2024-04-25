@@ -8,14 +8,14 @@ html {
     --clr-gray-100: rgb(237, 239, 241);
     --clr-gray-200: rgb(237, 239, 241); // #EDEFF1
     --clr-gray-300: rgba(25, 41, 58, 0.1);
-    --clr-gray-400: rgba(80, 100, 115, 0.5);
+    --clr-gray-400: rgba(80, 100, 115, 0.5); // #50647380
     --clr-gray-500: rgb(226, 228, 230); // #E2E4E6
-    --clr-gray-700: rgb(25, 41, 58); // #19293A
     --clr-slate-500: rgb(89, 109, 122); // #596D7A
     --clr-slate-600: rgb(52, 70, 87); // #344657
     --clr-slate-700: rgb(80, 100, 115); // #506473
+    --clr-slate-800: rgb(25, 41, 58);
     --clr-slate-900: rgb(17, 45, 64); // #112D40
-  
+
     // Layout variables
     --page-width: 80vw;
     --padding-section: 3rem;

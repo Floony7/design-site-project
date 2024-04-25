@@ -1,4 +1,4 @@
-import { Testimonial } from "./testimonials.component";
+import { Testimonial } from "../../data/types";
 import { CardContainer } from "./testimonials.styles";
 
 export const TestimonialCard = ({
@@ -14,8 +14,10 @@ export const TestimonialCard = ({
         <p>{comment}</p>
       </div>
       <img src={imgUrl} alt={name} />
-      <div>{name}</div>
-      <div>{company}</div>
+      <div>
+        <div className="card__name">{name}</div>
+        <div className="card__company">{company}</div>
+      </div>
     </CardContainer>
   );
 };

@@ -23,7 +23,7 @@ export const CtaLink = styled.a`
   text-underline-offset: 5px;
   text-decoration-color: var(--clr-magenta-200);
   box-shadow: inset 0 0 0 0 var(--clr-magenta-200);
-  color: var(--clr-gray-700);
+  color: var(--clr-slate-800);
   font-weight: 700;
   transition: all 0.3s ease-out;
 

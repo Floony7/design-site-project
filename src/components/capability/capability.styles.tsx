@@ -31,7 +31,7 @@ export const CapabilityGrid = styled.div`
   .capability-grid__header {
     font-size: 1.4rem;
     text-transform: uppercase;
-    color: var(--clr-gray-700);
+    color: var(--clr-slate-800);
     font-weight: 600;
     margin-top: 0;
     margin-bottom: 0;

@@ -16,7 +16,8 @@ export const CardContainer = styled.article`
   border-radius: 0.5rem;
   max-width: 350px;
   padding: 1rem;
-  color: black;
+  color: var(--clr-slate-700);
+  gap: 0.8rem;
   background-color: var(--clr-gray-500);
 
   .card__content {
@@ -24,8 +25,16 @@ export const CardContainer = styled.article`
     text-align: center;
   }
 
+  .card__name {
+    font-weight: 700;
+  }
+
   img {
-    width: 50%;
+    width: 120px;
+  }
+
+  p {
+    font-size: 1.2rem;
   }
 `;
 // export const CardContainer = styled.article<ActiveProps>`

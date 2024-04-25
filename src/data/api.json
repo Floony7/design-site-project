@@ -3,7 +3,7 @@
       "id": 1,
       "name": "Paul Simon",
       "comment": "Working with Digital Spaniel has been a breath of fresh air. Their approach and attitude kept me informed and included from the start. Super pleased with the end results too!",
-      "imgUrl": "https://www.rattanhospital.in/wp-content/uploads/2020/03/user-dummy-pic.png",
+      "imgUrl": "src/assets/images/testimonials/testimonial_face03.png",
       "company": "MegaCorp",
       "job_title": "Founder"
     },
@@ -11,7 +11,7 @@
       "id": 2,
       "name": "Johnny B. Goode",
       "comment": "Advice and support from DigiSpan was second to none. Always willing to help and offer advice and solutions. A very good and rapid understanding of our requirements was key to this.",
-      "imgUrl": "https://www.rattanhospital.in/wp-content/uploads/2020/03/user-dummy-pic.png",
+      "imgUrl": "src/assets/images/testimonials/testimonial_face01.png",
       "company": "Getting Things Done",
       "job_title": "CEO"
     },
@@ -19,7 +19,7 @@
       "id": 3,
       "name": "Mary Jane",
       "comment": "We needed a creative and unique brand which could compete against established products. Digital Spaniel delivered in spades and we’ve seen a huge response to the product launch.",
-      "imgUrl": "https://www.rattanhospital.in/wp-content/uploads/2020/03/user-dummy-pic.png",
+      "imgUrl": "src/assets/images/testimonials/testimonial_face02.png",
       "company": "Design Matters",
       "job_title": "CEO"
     }
