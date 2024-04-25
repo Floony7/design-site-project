@@ -29,7 +29,7 @@ export const Capabilty = () => {
             <CapabilityGrid>
               <section>
                 <div className="capability__section-grid--list">
-                  <h4 className="capability-grid__header">Brand</h4>
+                  <h4 className="capitalised__header">Brand</h4>
                   {capabilityArray
                     .filter((c) => c.area === "brand")
                     .map((c) => (
@@ -37,7 +37,7 @@ export const Capabilty = () => {
                     ))}
                 </div>
                 <div className="capability__section-grid--list">
-                  <h4 className="capability-grid__header">Development</h4>
+                  <h4 className="capitalised__header">Development</h4>
                   {capabilityArray
                     .filter((c) => c.area === "development")
                     .map((c) => (
@@ -47,7 +47,7 @@ export const Capabilty = () => {
               </section>
               <section>
                 <div>
-                  <h4 className="capability-grid__header">Marketing</h4>
+                  <h4 className="capitalised__header">Marketing</h4>
                   {capabilityArray
                     .filter((c) => c.area === "marketing")
                     .map((c) => (

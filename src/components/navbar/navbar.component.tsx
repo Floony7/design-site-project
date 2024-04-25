@@ -6,7 +6,9 @@ export const Navbar = () => {
     <NavStyles>
       <ul>
         {navLinks.map((link) => (
-          <li key={link.name}>{link.name}</li>
+          <li key={link.name}>
+            <a href="#">{link.name}</a>
+          </li>
         ))}
       </ul>
     </NavStyles>

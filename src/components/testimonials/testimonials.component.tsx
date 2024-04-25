@@ -7,14 +7,7 @@ import { CarouselContainer } from "./testimonials.styles";
 import { TestimonialCard } from "./testimonial-card.component";
 import { SectionHeader } from "../../styles/common";
 import { useState } from "react";
-
-export interface Testimonial {
-  id: number;
-  name: string;
-  comment: string;
-  imgUrl: string;
-  company: string;
-}
+import { Testimonial } from "../../data/types";
 
 const fetchTestimonials = async () => {
   try {

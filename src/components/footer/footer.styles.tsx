@@ -2,11 +2,12 @@ import styled from "styled-components";
 import { FullWidthSection, SectionContainer } from "../../styles/page-layout";
 
 export const FooterContainer = styled(FullWidthSection)`
-  padding: 3rem 0;
+  padding: 1rem 0;
 `;
 
 export const FooterSection = styled(SectionContainer)`
   display: flex;
+  padding-bottom: 4rem;
 
   .footer__col {
     width: 100%;
@@ -56,5 +57,15 @@ export const FooterLinks = styled.section`
 
   h4 {
     margin-bottom: 0;
+  }
+`;
+
+export const Colophon = styled.section`
+  display: flex;
+  justify-content: space-between;
+
+  .colophon__social-links {
+    display: flex;
+    width: 30%;
   }
 `;

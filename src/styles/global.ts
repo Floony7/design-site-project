@@ -41,7 +41,7 @@ img {
 }
 
 .capitalised__header {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
     color: var(--clr-gray-700);
     font-weight: 600;

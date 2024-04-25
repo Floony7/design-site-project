@@ -1,7 +1,13 @@
 import { CtaLink, SectionHeader } from "../../styles/common";
 import { navLinks, services } from "../../data/mock";
-import { FooterContainer, FooterLinks, FooterSection } from "./footer.styles";
+import {
+  Colophon,
+  FooterContainer,
+  FooterLinks,
+  FooterSection,
+} from "./footer.styles";
 import { capitalise } from "../../utils/functions";
+import { SectionContainer } from "../../styles/page-layout";
 
 export const Footer = () => {
   return (
@@ -53,6 +59,15 @@ export const Footer = () => {
           </FooterLinks>
         </div>
       </FooterSection>
+      <SectionContainer>
+        <Colophon>
+          <div>
+            Copyright © Digital Spaniel {new Date().getFullYear()}. All rights
+            reserved.
+          </div>
+          <div className="colophon__social-links">Social links</div>
+        </Colophon>
+      </SectionContainer>
     </FooterContainer>
   );
 };
