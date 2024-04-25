@@ -8,8 +8,9 @@ export const NavStyles = styled.nav`
   ul {
     list-style: none;
     padding-left: none;
+    width: 70%;
     display: flex;
-    gap: 2rem;
+    justify-content: space-evenly;
 
     li {
       color: white;

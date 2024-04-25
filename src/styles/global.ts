@@ -27,6 +27,8 @@ html {
     font-family: "Open Sans", system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
     font-weight: 400;
+    padding: 0;
+    margin: 0;
 }
 
 body {
@@ -38,7 +40,12 @@ img {
     max-width: 100%;
 }
 
-.slick-slide > div {
-    margin: 0 10px !important;
-}
+.capitalised__header {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: var(--clr-gray-700);
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 `;

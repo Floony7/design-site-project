@@ -1,5 +1,7 @@
 
-export type Capability = {area: string, skill: string}
+export type CapabilityArea = "brand" | "development" | "marketing";
+
+export type Capability = {area: CapabilityArea, skill: string}
 
 export const capabilityArray: Capability[] = [
     {area: "brand", skill: "Brand Strategy"},

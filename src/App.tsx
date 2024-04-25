@@ -4,6 +4,7 @@ import { Capabilty } from "./components/capability/capability.component";
 import { Header } from "./components/header/header.component";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Testimonials } from "./components/testimonials/testimonials.component";
+import { Footer } from "./components/footer/footer.component";
 
 const client = new QueryClient();
 
@@ -15,6 +16,7 @@ function App() {
       <Hero />
       <Capabilty />
       <Testimonials />
+      <Footer />
     </QueryClientProvider>
   );
 }
