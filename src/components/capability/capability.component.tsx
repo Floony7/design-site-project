@@ -33,7 +33,7 @@ export const Capabilty = () => {
                   {capabilityArray
                     .filter((c) => c.area === "brand")
                     .map((c) => (
-                      <div>{c.skill}</div>
+                      <div key={Math.random()}>{c.skill}</div>
                     ))}
                 </div>
                 <div className="capability__section-grid--list">
@@ -41,7 +41,7 @@ export const Capabilty = () => {
                   {capabilityArray
                     .filter((c) => c.area === "development")
                     .map((c) => (
-                      <div>{c.skill}</div>
+                      <div key={Math.random()}>{c.skill}</div>
                     ))}
                 </div>
               </section>
@@ -51,7 +51,7 @@ export const Capabilty = () => {
                   {capabilityArray
                     .filter((c) => c.area === "marketing")
                     .map((c) => (
-                      <div>{c.skill}</div>
+                      <div key={Math.random()}>{c.skill}</div>
                     ))}
                 </div>
               </section>
