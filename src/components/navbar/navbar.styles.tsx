@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const NavStyles = styled.nav`
   width: 60%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 
   ul {
     list-style: none;

@@ -13,6 +13,7 @@ export const HeroContainer = styled.section`
   .hero__section-left {
     background: inherit;
     display: flex;
+    justify-content: flex-end;
     align-items: center;
     height: 100%;
   }
@@ -23,13 +24,17 @@ export const HeroContainer = styled.section`
     background-size: contain; */
     img {
       height: 100%;
-      max-width: 100%;
+      width: 100%;
     }
   }
 
   .hero__section-content {
     margin-top: 7rem;
     width: 70%;
+
+    div {
+      width: 70%;
+    }
   }
 
   .work-categories {

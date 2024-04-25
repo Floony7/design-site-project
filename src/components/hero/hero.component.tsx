@@ -6,11 +6,12 @@ import { HeroContainer } from "./hero.styles";
 export const Hero = () => {
   return (
     <FullWidthSection>
-      <SectionContainer>
-        <div>
-          <HeroContainer>
-            <div className="hero__section hero__section-left">
-              <article className="hero__section-content">
+      {/* <SectionContainer> */}
+      <div>
+        <HeroContainer>
+          <div className="hero__section hero__section-left">
+            <article className="hero__section-content">
+              <div>
                 <div className="work-categories">
                   Brand, Dev, Ecom, Marketing
                 </div>
@@ -26,14 +27,15 @@ export const Hero = () => {
                 <p>
                   <CtaLink href="#">Let's talk</CtaLink>
                 </p>
-              </article>
-            </div>
-            <div className="hero__section hero__section-right">
-              <img src={spaniel} alt="Spaniel Design Agency logo" />
-            </div>
-          </HeroContainer>
-        </div>
-      </SectionContainer>
+              </div>
+            </article>
+          </div>
+          <div className="hero__section hero__section-right">
+            <img src={spaniel} alt="Spaniel Design Agency logo" />
+          </div>
+        </HeroContainer>
+      </div>
+      {/* </SectionContainer> */}
     </FullWidthSection>
   );
 };
