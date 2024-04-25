@@ -16,6 +16,6 @@ export const HeaderStyles = styled.header`
   padding: var(--padding);
 
   img {
-    max-height: 60px;
+    max-height: 70px;
   }
 `;

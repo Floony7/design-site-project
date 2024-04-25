@@ -1,16 +1,9 @@
-import { navLinks } from "../../data/mock";
-import { NavStyles } from "./navbar.styles";
+import { useViewportWidth } from "../../utils/use-viewport-width";
+import { DesktopNav } from "./desktop.nav.component";
+import { MobileNav } from "./mobile.nav.component";
 
 export const Navbar = () => {
-  return (
-    <NavStyles>
-      <ul>
-        {navLinks.map((link) => (
-          <li key={link.name}>
-            <a href="#">{link.name}</a>
-          </li>
-        ))}
-      </ul>
-    </NavStyles>
-  );
+  const width = useViewportWidth();
+  console.log("WIDTH", width);
+  return <>{width < 1200 ? <MobileNav /> : <DesktopNav />}</>;
 };

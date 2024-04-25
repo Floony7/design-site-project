@@ -15,7 +15,9 @@ export const Header = () => {
       <Animator animation={batch(Fade(), FadeIn())}>
         <HeaderContainer>
           <HeaderStyles>
-            <img src={logo} alt="Spaniel Design Agency logo" />
+            <a href="/">
+              <img src={logo} alt="Spaniel Design Agency logo" />
+            </a>
             <Navbar />
           </HeaderStyles>
         </HeaderContainer>
