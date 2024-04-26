@@ -66,6 +66,6 @@ export const MobileNavStyles = styled.nav`
 
 export const StyledHamburger = styled(MdOutlineMenu)`
   position: absolute;
-  right: 2%;
+  right: 3%;
   cursor: pointer;
 `;

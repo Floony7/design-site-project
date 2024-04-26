@@ -9,14 +9,16 @@ export const FullWidthSection = styled.section<ColorProps>`
   background-color: ${(props) =>
     props.bgColor === "gray" ? "var(--clr-gray-200)" : "white"};
 `;
-
 FullWidthSection.displayName = "FullWidthSection";
 
 export const SectionContainer = styled.div`
   width: 70vw;
   margin-inline: auto;
-`;
 
+  @media only screen and (max-width: 960px) {
+    width: 90vw;
+  }
+`;
 SectionContainer.displayName = "SectionContainer";
 
 export const Main = styled.main`

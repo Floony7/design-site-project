@@ -7,6 +7,10 @@ export const CapabilityStyles = styled.div`
   min-height: 400px;
   padding-top: 3rem;
 
+  @media only screen and (max-width: 760px) {
+    grid-template-columns: 1fr;
+  }
+
   .capability__section-left {
     background: inherit;
     display: flex;
@@ -15,6 +19,10 @@ export const CapabilityStyles = styled.div`
 
   .capability__section-content {
     width: 65%;
+
+    @media only screen and (max-width: 760px) {
+      width: 100%;
+    }
   }
 `;
 
@@ -23,6 +31,11 @@ export const CapabilityGrid = styled.div`
   grid-template-columns: 1fr 1fr;
   width: 60%;
   margin: 3rem 0 3rem 3rem;
+
+  @media only screen and (max-width: 760px) {
+    width: 100%;
+    justify-items: center;
+  }
 
   .capability__section-grid--list:not(:first-child) {
     margin-top: 1rem;

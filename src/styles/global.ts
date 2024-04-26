@@ -21,7 +21,9 @@ html {
     --padding-section: 3rem;
     --padding: 1rem;
     --margin: 1rem;
+    --width-sm: 640px;
     --width-lg: 960px;
+    --width-xl: 1600px;
 
     // Base styles
     font-family: "Open Sans", system-ui, Avenir, Helvetica, Arial, sans-serif;

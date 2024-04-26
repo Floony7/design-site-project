@@ -6,6 +6,10 @@ export const HeroContainer = styled.section`
   display: grid;
   grid-template-columns: 1fr 1fr;
 
+  @media only screen and (max-width: 760px) {
+    grid-template-columns: auto;
+  }
+
   .hero__section {
     min-height: 30vh;
   }
@@ -16,12 +20,15 @@ export const HeroContainer = styled.section`
     justify-content: flex-end;
     align-items: center;
     height: 100%;
+
+    @media only screen and (max-width: 760px) {
+      margin: 2rem 0;
+      justify-content: center;
+      width: 100%;
+    }
   }
 
   .hero__section-right {
-    /* background: url("src/assets/images/spaniel_gradient.png") no-repeat center
-      center fixed;
-    background-size: contain; */
     img {
       height: 100%;
       width: 100%;
@@ -34,6 +41,14 @@ export const HeroContainer = styled.section`
 
     div {
       width: 70%;
+    }
+
+    @media only screen and (max-width: 760px) {
+      width: 90vw;
+
+      div {
+        width: 100%;
+      }
     }
   }
 

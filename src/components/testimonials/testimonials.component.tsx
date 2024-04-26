@@ -3,11 +3,13 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FullWidthSection, SectionContainer } from "../../styles/page-layout";
-import { CarouselContainer } from "./testimonials.styles";
+import { CarouselContainer, TestimonialSection } from "./testimonials.styles";
 import { TestimonialCard } from "./testimonial-card.component";
 import { SectionHeader } from "../../styles/common";
 import { useState } from "react";
 import { Testimonial } from "../../data/types";
+import { useViewportWidth } from "../../utils/use-viewport-width";
+import { TestimonialFallbackCard } from "./testimonial-fallback.component";
 
 const fetchTestimonials = async () => {
   try {
@@ -20,13 +22,14 @@ const fetchTestimonials = async () => {
 };
 
 export const Testimonials = () => {
-  const { isError, data } = useQuery({
+  const { data } = useQuery({
     queryKey: ["testimonials"],
     queryFn: fetchTestimonials,
   });
   //   console.log("Result", data);
   // Use currentSlide to determine which card is active
   const [currentSlide, setCurrentSlide] = useState(0);
+  const width = useViewportWidth();
 
   const settings = {
     dots: true,
@@ -36,7 +39,7 @@ export const Testimonials = () => {
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 1500,
+        breakpoint: 1600,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
@@ -44,7 +47,7 @@ export const Testimonials = () => {
         },
       },
       {
-        breakpoint: 800,
+        breakpoint: 600,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -56,30 +59,40 @@ export const Testimonials = () => {
   console.log("CURRENT", currentSlide);
   return (
     <FullWidthSection bgColor="white">
-      <SectionContainer>
+      <TestimonialSection>
         <SectionHeader>
           We unleash <br />
           <span className="gray">business potential</span>
         </SectionHeader>
-        <CarouselContainer>
-          {isError ? "Could not fetch testimonials" : null}
-          <div className="slider-container">
-            <Slider
-              {...settings}
-              beforeChange={(currentSlide: number, nextSlide: number) =>
-                setCurrentSlide(nextSlide)
-              }
-            >
-              {data?.testimonials.map((testimonial) => (
-                <TestimonialCard
-                  key={testimonial.id}
-                  testimonial={testimonial}
-                />
-              ))}
-            </Slider>
-          </div>
-        </CarouselContainer>
-      </SectionContainer>
+        {width > 720 ? (
+          <CarouselContainer>
+            <div className="slider-container">
+              <Slider
+                {...settings}
+                beforeChange={(currentSlide: number, nextSlide: number) =>
+                  setCurrentSlide(nextSlide)
+                }
+              >
+                {data?.testimonials.map((testimonial) => (
+                  <TestimonialCard
+                    key={testimonial.id}
+                    testimonial={testimonial}
+                  />
+                ))}
+              </Slider>
+            </div>
+          </CarouselContainer>
+        ) : (
+          <>
+            {data?.testimonials.map((testimonial) => (
+              <TestimonialFallbackCard
+                key={testimonial.id}
+                testimonial={testimonial}
+              />
+            ))}
+          </>
+        )}
+      </TestimonialSection>
     </FullWidthSection>
   );
 };

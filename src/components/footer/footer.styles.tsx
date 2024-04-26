@@ -8,6 +8,7 @@ export const FooterContainer = styled(FullWidthSection)`
 export const FooterSection = styled(SectionContainer)`
   display: flex;
   padding-bottom: 4rem;
+  flex-wrap: wrap;
 
   .footer__col {
     width: 100%;

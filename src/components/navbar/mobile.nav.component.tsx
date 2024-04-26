@@ -8,7 +8,7 @@ export const MobileNav = () => {
   const Hamburger = (
     <StyledHamburger
       size="30px"
-      color="white"
+      color="black"
       onClick={() => setIsOpen((prev) => !prev)}
     />
   );

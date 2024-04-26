@@ -5,5 +5,5 @@ import { MobileNav } from "./mobile.nav.component";
 export const Navbar = () => {
   const width = useViewportWidth();
   console.log("WIDTH", width);
-  return <>{width < 1200 ? <MobileNav /> : <DesktopNav />}</>;
+  return <>{width < 760 ? <MobileNav /> : <DesktopNav />}</>;
 };

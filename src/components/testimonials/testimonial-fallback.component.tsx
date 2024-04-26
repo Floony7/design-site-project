@@ -1,7 +1,7 @@
 import { Testimonial } from "../../data/types";
-import { CardContainer } from "./testimonials.styles";
+import { FallbackCardComponent } from "./testimonials.styles";
 
-export const TestimonialCard = ({
+export const TestimonialFallbackCard = ({
   testimonial,
 }: {
   testimonial: Testimonial;
@@ -9,15 +9,16 @@ export const TestimonialCard = ({
   const { name, comment, imgUrl, company } = testimonial;
 
   return (
-    <CardContainer>
+    <FallbackCardComponent>
+      <img src={imgUrl} alt={name} />
       <div className="card__content">
         <p>{comment}</p>
       </div>
-      <img src={imgUrl} alt={name} />
-      <div className="card__client-details">
+
+      <div>
         <div className="card__name">{name}</div>
         <div className="card__company">{company}</div>
       </div>
-    </CardContainer>
+    </FallbackCardComponent>
   );
 };

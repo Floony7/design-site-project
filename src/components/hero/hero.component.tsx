@@ -1,12 +1,14 @@
 import { CtaLink, Lead, SectionHeader } from "../../styles/common";
-import { FullWidthSection, SectionContainer } from "../../styles/page-layout";
+import { FullWidthSection } from "../../styles/page-layout";
 import spaniel from "../../assets/images/spaniel_gradient.png";
 import { HeroContainer } from "./hero.styles";
+import { useViewportWidth } from "../../utils/use-viewport-width";
 
 export const Hero = () => {
+  const width = useViewportWidth();
+
   return (
     <FullWidthSection>
-      {/* <SectionContainer> */}
       <div>
         <HeroContainer>
           <div className="hero__section hero__section-left">
@@ -30,9 +32,11 @@ export const Hero = () => {
               </div>
             </article>
           </div>
-          <div className="hero__section hero__section-right">
-            <img src={spaniel} alt="Spaniel Design Agency logo" />
-          </div>
+          {width > 760 ? (
+            <div className="hero__section hero__section-right">
+              <img src={spaniel} alt="Spaniel Design Agency logo" />
+            </div>
+          ) : null}
         </HeroContainer>
       </div>
       {/* </SectionContainer> */}
