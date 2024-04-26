@@ -69,7 +69,7 @@ export const Testimonials = () => {
             <div className="slider-container">
               <Slider
                 {...settings}
-                beforeChange={(currentSlide: number, nextSlide: number) =>
+                beforeChange={(_, nextSlide: number) =>
                   setCurrentSlide(nextSlide)
                 }
               >
