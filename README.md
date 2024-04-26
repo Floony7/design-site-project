@@ -1,30 +1,27 @@
-# React + TypeScript + Vite
+# Digital Spaniel Design Agency - Rationale and Dev Choices
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Read on for background and decisions made in handling some of the requirements of the brief and what I'd do next / if had more time.
 
-Currently, two official plugins are available:
+## Project structure and styles
+For this project, I wanted to use a mix of Styled Components and BEM where necessary. I created a `globalStyles` to store css color variables and other defaults.
+With Styled Components, I scope the styles base don components and use the globalStyles for sourcing variables.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+I also use a couple of block and section Styled Components that can easily be imported in and made available where needed. These set widths and other styles such as margins and padding that are replicated throughout the page.
 
-## Expanding the ESLint configuration
+## Responsive design
+Responsive design wasn't bakd in to the design, so I developed the site with desktop / llarger viewport widths in mind. I used both media queries (max-width) and a custom hook, `useViewportWidth` for responsiveness.
+The hook came in handy for creating the hamburger menu and in rendering the responsive fallback for the testimonial carousel.
+Essentially, I use this hook to get the latest viewport width then conditionally render based on that width (in the above cases a mobile nav and a fallback for the carousel).
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Data fetching
+The data for the Testimonials section is sourced from a `api.json` file hosted locally. For this, I used React Query as this is one of the best ways in React for fetching data and tracking loading states. As the brief also mentioned showing the use of a state manager, I coded the data fetching and storage for testimonials in a `TestimonialsContext`. Using Context feels right for a simple application like this. In a more complex job I would reach for React Toolkit, as it is simple and effective to implement out of the box.
 
-- Configure the top-level `parserOptions` property like this:
+## Carousel
+The carousel has been brought in via a package and isn't quite what the design specified. It also started to degrade in quality at lower viewport widths, so I render it a fallback for these devices.
+If I had more time I would be able to develop a custom carousel, or utilise an existing component for this. Given the time and the fact the testimonials section is so important to this test, I have included a working carousel.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Additional time - what I would do
+Aside from any tasks I have stated above, I would also:
+- pay more attention to error handling with respect to data fetching
+- perhaps use sSuspense for fallback rendering and lazy loading
+- use Flexbox in places where I've used Grid so that responsiveness is baked in (less need for media queries)
