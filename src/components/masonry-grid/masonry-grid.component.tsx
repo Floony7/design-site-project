@@ -12,6 +12,7 @@ export const MasonryGrid = () => {
           <Masonry>
             {officeImages.map((img) => (
               <img
+                key={img.sm}
                 src={`${path}/${img.sm}`}
                 srcSet={`${path}/${img.sm}, ${path}/${img.lg} 2x`}
                 alt={img.sm}

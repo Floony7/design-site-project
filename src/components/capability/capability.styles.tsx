@@ -35,6 +35,7 @@ export const CapabilityGrid = styled.div`
   @media only screen and (max-width: 760px) {
     width: 100%;
     justify-items: center;
+    margin-left: 0;
   }
 
   .capability__section-grid--list:not(:first-child) {
