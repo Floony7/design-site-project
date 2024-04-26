@@ -8,6 +8,7 @@ import {
 } from "./footer.styles";
 import { capitalise } from "../../utils/functions";
 import { SectionContainer } from "../../styles/page-layout";
+import { SocialLinks } from "./social-links.component";
 
 export const Footer = () => {
   return (
@@ -65,7 +66,7 @@ export const Footer = () => {
             Copyright © Digital Spaniel {new Date().getFullYear()}. All rights
             reserved.
           </div>
-          <div className="colophon__social-links">Social links</div>
+          <SocialLinks />
         </Colophon>
       </SectionContainer>
     </FooterContainer>

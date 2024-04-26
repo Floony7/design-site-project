@@ -8,7 +8,10 @@ export const FooterContainer = styled(FullWidthSection)`
 export const FooterSection = styled(SectionContainer)`
   display: flex;
   padding-bottom: 4rem;
-  flex-wrap: wrap;
+
+  @media only screen and (max-width: 760px) {
+    flex-wrap: wrap;
+  }
 
   .footer__col {
     width: 100%;
@@ -71,5 +74,16 @@ export const Colophon = styled.section`
     display: flex;
     flex-wrap: wrap;
     width: 30%;
+  }
+`;
+
+export const SocialsSection = styled.section`
+  display: flex;
+  gap: 1rem;
+  color: var(--clr-gray-800);
+  font-size: 1.2rem;
+
+  * {
+    cursor: pointer;
   }
 `;

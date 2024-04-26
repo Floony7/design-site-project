@@ -2,7 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { FullWidthSection, SectionContainer } from "../../styles/page-layout";
+import { FullWidthSection } from "../../styles/page-layout";
 import { CarouselContainer, TestimonialSection } from "./testimonials.styles";
 import { TestimonialCard } from "./testimonial-card.component";
 import { SectionHeader } from "../../styles/common";
