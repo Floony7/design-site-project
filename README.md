@@ -4,7 +4,7 @@ Read on for background and decisions made in handling some of the requirements o
 
 ## Project structure and styles
 For this project, I wanted to use a mix of Styled Components and BEM where necessary. I created a `globalStyles` to store css color variables and other defaults.
-With Styled Components, I scope the styles base don components and use the globalStyles for sourcing variables.
+With Styled Components, I scope the styles based on components that use them and source variables from `globalStyles`.
 
 I also use a couple of block and section Styled Components that can easily be imported in and made available where needed. These set widths and other styles such as margins and padding that are replicated throughout the page.
 
