@@ -23,5 +23,6 @@ If I had more time I would be able to develop a custom carousel, or utilise an e
 ## Additional time - what I would do
 Aside from any tasks I have stated above, I would also:
 - pay more attention to error handling with respect to data fetching
-- perhaps use sSuspense for fallback rendering and lazy loading
+- perhaps use Suspense for fallback rendering and lazy loading
 - use Flexbox in places where I've used Grid so that responsiveness is baked in (less need for media queries)
+- design better customised components for the Carousel, Masonry and perhaps the Mobile Nav
