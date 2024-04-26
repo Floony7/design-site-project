@@ -13,7 +13,7 @@ import { TestimonialFallbackCard } from "./testimonial-fallback.component";
 
 const fetchTestimonials = async () => {
   try {
-    const res = await fetch("src/data/api.json");
+    const res = await fetch("/api.json");
     const data: Promise<{ testimonials: Testimonial[] }> = await res.json();
     return data;
   } catch (error) {

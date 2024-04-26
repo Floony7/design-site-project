@@ -2,7 +2,7 @@ import { FullWidthSection } from "../../styles/page-layout";
 import { officeImages } from "../../data/mock";
 import { MasonryLayout } from "./masonry-grid.styles";
 
-const path = "assets/images/office";
+const path = "assets/images/office/";
 
 export const MasonryGrid = () => {
   return (
@@ -10,6 +10,7 @@ export const MasonryGrid = () => {
       <MasonryLayout>
         {officeImages.map((img) => (
           <img
+            key={img.sm}
             src={`${path}/${img.sm}`}
             srcSet={`${path}/${img.sm}, ${path}/${img.lg} 2x`}
             alt={img.sm}
