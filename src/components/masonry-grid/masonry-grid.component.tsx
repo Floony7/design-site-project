@@ -1,7 +1,9 @@
 import { FullWidthSection } from "../../styles/page-layout";
 import { officeImages } from "../../data/mock";
 import { MasonryLayout } from "./masonry-grid.styles";
-const path = "src/assets/images/office";
+
+const path = "assets/images/office";
+
 export const MasonryGrid = () => {
   return (
     <FullWidthSection bgColor="gray">
