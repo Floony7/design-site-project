@@ -9,12 +9,12 @@ With Styled Components, I scope the styles based on components that use them and
 I also use a couple of block and section Styled Components that can easily be imported in and made available where needed. These set widths and other styles such as margins and padding that are replicated throughout the page.
 
 ## Responsive design
-Responsive design wasn't bakd in to the design, so I developed the site with desktop / llarger viewport widths in mind. I used both media queries (max-width) and a custom hook, `useViewportWidth` for responsiveness.
+Responsive design wasn't bakd in to the design, so I developed the site with desktop / larger viewport widths in mind. I used both media queries (max-width) and a custom hook, `useViewportWidth` for responsiveness.
 The hook came in handy for creating the hamburger menu and in rendering the responsive fallback for the testimonial carousel.
 Essentially, I use this hook to get the latest viewport width then conditionally render based on that width (in the above cases a mobile nav and a fallback for the carousel).
 
 ## Data fetching
-The data for the Testimonials section is sourced from a `api.json` file hosted locally. For this, I used React Query as this is one of the best ways in React for fetching data and tracking loading states. As the brief also mentioned showing the use of a state manager, I coded the data fetching and storage for testimonials in a `TestimonialsContext`. Using Context feels right for a simple application like this. In a more complex job I would reach for React Toolkit, as it is simple and effective to implement out of the box.
+The data for the Testimonials section is sourced from a `api.json` file hosted locally. For this, I used React Query as this is one of the best ways in React for fetching data, caching and tracking loading states. As the brief also mentioned showing the use of a state manager, I coded the data fetching and storage for testimonials in a `TestimonialsContext`. Using Context feels right for a simple application like this. In a more complex job I would reach for React Toolkit, as it is simple and effective to implement out of the box.
 
 ## Carousel
 The carousel has been brought in via a package and isn't quite what the design specified. It also started to degrade in quality at lower viewport widths, so I render it a fallback for these devices.
